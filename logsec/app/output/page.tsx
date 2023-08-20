@@ -34,7 +34,7 @@ function Model({ showModal, setShowModal, activeData }: any) {
 }
 
 export default function Output() {
-  const [showModal, setShowModal] = useState(true);
+  const [showModal, setShowModal] = useState(false);
   const [activeData, setActiveData] = useState<data>(data[0]);
   const openModel = (id: any) => {
     setShowModal(true);

@@ -157,10 +157,9 @@ a {
 
 .sectionoutput {
   background-color: #fb641b;
-  height: 90vh;
+  height: 95vh;
   width: 100%;
   padding: 20px 90px;
-  overflow-y: scroll;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -312,4 +311,21 @@ a {
 .outputpage {
   -webkit-filter: blur(5px);
   filter: blur(5px);
+}
+
+.loaderContainer {
+  width: 100%;
+  height: 100%;
+  background-color: #fbfbfb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contload {
+  height: 90vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  left: 0;
 }

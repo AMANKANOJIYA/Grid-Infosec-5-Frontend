@@ -3,9 +3,29 @@
 import React from "react";
 import { useState } from "react";
 import Dropzone from "react-dropzone";
+
+function Loader() {
+  return (
+    <>
+      <div className="contload">
+        <div className="navbar">
+          <img src="/flipkart.png" alt="Logo" className="logoimage" />
+        </div>
+        <div className="loaderContainer">
+          <img src="/comp_3.gif" alt="Logo" className="loader" />
+        </div>
+      </div>
+    </>
+  );
+}
+
 export default function Home() {
   const [logFile, setLogFile] = useState();
   const [secFile, setSecFile] = useState();
+  const [submit, setSubmit] = useState(false);
+  const loader = () => {
+    setSubmit(true);
+  };
   return (
     <>
       <div className="navbar">
@@ -55,7 +75,10 @@ export default function Home() {
           </Dropzone>
         </div>
       </div>
-      <h3 className="submit">Submit</h3>
+      <h3 className="submit" onClick={loader}>
+        Submit
+      </h3>
+      {submit ? <Loader /> : null}
     </>
   );
 }
