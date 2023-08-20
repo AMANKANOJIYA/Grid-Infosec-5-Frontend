@@ -250,3 +250,66 @@ a {
   font-size: 20px;
   font-weight: 500;
 }
+
+.modal {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 85vh;
+  width: 80vw;
+  max-width: 80vw;
+  background-color: white;
+  border-radius: 8px;
+  padding: 30px 30px;
+}
+
+.modalclose {
+  position: relative;
+  /* bottom: 40px; */
+  /* right: 40px; */
+  display: inline-flex;
+  float: right;
+  /* margin: auto; */
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 16px;
+  background-color: #287ff0;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.modalproblem {
+  color: black;
+  font-weight: 700;
+  padding: 0px 5px;
+  padding-top: 8px;
+  margin-bottom: 20px;
+}
+.modallogline {
+  background-color: rgba(102, 163, 220, 25%);
+  border-radius: none;
+  padding: 10px 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  font-size: 13px;
+  /* max-width: 100ch; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 20px;
+}
+
+.modalprobsol {
+  color: black;
+  font-weight: 400;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.outputpage {
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+}
